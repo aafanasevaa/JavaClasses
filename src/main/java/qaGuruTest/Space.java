@@ -10,16 +10,19 @@ public class Space {
 
         Planet arrakis = new Planet("red", 45, true); //The spice must flow
         Planet naboo = new Planet("blue", 30, true);// May the force be with you
-        if (arrakis.temperature <= 30) {
+        if(arrakis.temperature <= 30) {
             System.out.println("The spaceship is going to land on arrakis");
-        } else if (naboo.temperature <= 30) {
+        }else if(naboo.temperature <= 30){
             System.out.println("The spaceship is going to land on naboo");
         } else {
             System.out.println("The time of the space trip is unknown");
         }
 
-        Spaceship falcon = new Spaceship(17.5, true, "Space X");
-        Spaceship milano = new Spaceship(15, false, "RosCosmos");
+        Spaceship falcon = new Spaceship(true, "Space X");
+        Spaceship milano = new Spaceship(false, "RosCosmos");
+        Spaceship.Movement movement = new Spaceship.Movement();
+        movement.speed = 100;
         milano.retrieveInfo();
+        System.out.println("The speed of the spaceship is " + movement.speed + " miles per second");
     }
 }

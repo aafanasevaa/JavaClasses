@@ -1,17 +1,20 @@
 package qaGuruTest;
 
 public class Spaceship {
-    double speed;
     boolean isNavigatedByAI;
     String manufacturer;
 
-    Spaceship(double speed, boolean isNavigatedByAI, String manufacturer) {
-        this.speed = speed;
+    Spaceship(boolean isNavigatedByAI, String manufacturer){
         this.isNavigatedByAI = isNavigatedByAI;
         this.manufacturer = manufacturer;
     }
 
-    public void retrieveInfo() {
-        System.out.println("The speed of the spaceship is " + speed + "\n" + "The spaceship manufacturer is " + manufacturer);
+    static class Movement {
+        int speed = 100;
+        String direction = "West";
+    }
+
+    public void retrieveInfo () {
+        System.out.println("The spaceship manufacturer is " + manufacturer);
     }
 }

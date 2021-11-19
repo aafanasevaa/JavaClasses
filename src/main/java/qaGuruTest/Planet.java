@@ -8,7 +8,7 @@ public class Planet {
     int temperature;
     boolean isHabitable;
 
-    Planet(String color, int temperature, boolean isHabitable) {
+    Planet (String color, int temperature, boolean isHabitable) {
         this.color = color;
         this.temperature = temperature;
         this.isHabitable = isHabitable;
