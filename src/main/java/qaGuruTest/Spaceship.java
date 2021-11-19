@@ -4,7 +4,7 @@ public class Spaceship {
     boolean isNavigatedByAI;
     String manufacturer;
 
-    Spaceship(boolean isNavigatedByAI, String manufacturer){
+    Spaceship(boolean isNavigatedByAI, String manufacturer) {
         this.isNavigatedByAI = isNavigatedByAI;
         this.manufacturer = manufacturer;
     }
@@ -14,7 +14,7 @@ public class Spaceship {
         String direction = "West";
     }
 
-    public void retrieveInfo () {
+    public void retrieveInfo() {
         System.out.println("The spaceship manufacturer is " + manufacturer);
     }
 }
